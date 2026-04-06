@@ -1,4 +1,41 @@
-# Nike-data-analysis
+
+# 👟 Nike Global Data Analysis & Dashboard
+Este projeto realiza uma análise detalhada do catálogo global da Nike em 2026, focando em estratégias de precificação, descontos e variações de mercado entre 45 países. Além da análise exploratória em Python, o projeto conta com um dashboard interativo feito em Streamlit.
+
+## 🎯 Objetivos do Projeto
+Análise de Preços: Investigar como a Nike posiciona seus preços em diferentes mercados globais após a conversão para uma moeda comum (USD).
+
+Identificação de Outliers: Detectar países com preços muito acima ou abaixo da média global para entender estratégias locais.
+
+Análise Preditiva: Criar bases para futuras análises de faturamento cruzando o poder de compra de cada país com os preços praticados.
+
+## 🛠️ Tecnologias e Bibliotecas
+As seguintes ferramentas foram utilizadas no desenvolvimento:
+
+Python 3.13
+
+Pandas: Para manipulação e tratamento dos dados.
+
+Matplotlib & Seaborn: Para criação de gráficos estatísticos.
+
+Streamlit: Para a criação do dashboard interativo.
+
+Numpy: Para suporte a operações matemáticas.
+
+## 📊 Principais Conclusões da Análise
+De acordo com os dados processados:
+
+Consistência Global: A Nike mantém preços consistentes na maioria dos países, com a maior concentração entre $80 e $100 USD.
+
+Países Fora da Curva (Outliers):
+
+Índia: Apresenta o maior preço mediano observado (~$167 USD).
+
+Egito: Apresenta um dos menores preços medianos (~$16 USD).
+
+Japão e Coreia do Sul: Também foram identificados como pontos fora da curva em termos de posicionamento estratégico ou descontos.
+
+Estratégia de Desconto: A análise revelou que, apesar da concentração de preços, a estratégia de descontos varia significativamente para lidar com as particularidades de cada mercado local.
 ## 📊 Dataset
 
 O dataset utilizado neste projeto é muito grande para ser armazenado diretamente no repositório do GitHub.
@@ -42,6 +79,17 @@ Caso seja diferente, altere o nome do arquivo ou ajuste no seu script Python.
 
 ---
 
-## 💡 Dica
+##🚀 Como Executar o Dashboard
+Se você deseja visualizar o dashboard interativo, após configurar o dataset, execute:
 
-Se preferir, você pode usar apenas uma amostra do dataset para testes, reduzindo o tempo de carregamento e evitando problemas de desempenho.
+```
+pip install streamlit pandas seaborn matplotlib numpy
+streamlit run dashboard.py
+```
+```
+📁 projeto-dashboard
+ ┣ 📄 app.ipynb          # Notebook com a análise exploratória
+ ┣ 📄 dashboard.py      # Script do Dashboard Streamlit
+ ┣ 📄 Global_Nike.csv   # Dataset (após o download)
+ ┗ 📄 README.md
+ ```
