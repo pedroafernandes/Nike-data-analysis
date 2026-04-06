@@ -65,9 +65,17 @@ A estrutura deve ficar assim:
 
 ```
 📁 projeto-dashboard
- ┣ 📄 dashboard.py
- ┣ 📄 Global_Nike.csv
+ ┣ 📄 app.ipynb          # Notebook com a análise exploratória
+ ┣ 📄 dashboard.py      # Script do Dashboard Streamlit
+ ┣ 📄 Global_Nike.csv   # Dataset (após o download)
  ┗ 📄 README.md
+```
+##🚀 Como Executar o Dashboard
+Se você deseja visualizar o dashboard interativo, após configurar o dataset, execute:
+
+```
+pip install streamlit pandas seaborn matplotlib numpy
+streamlit run dashboard.py
 ```
 
 ---
@@ -79,17 +87,5 @@ Caso seja diferente, altere o nome do arquivo ou ajuste no seu script Python.
 
 ---
 
-##🚀 Como Executar o Dashboard
-Se você deseja visualizar o dashboard interativo, após configurar o dataset, execute:
 
-```
-pip install streamlit pandas seaborn matplotlib numpy
-streamlit run dashboard.py
-```
-```
-📁 projeto-dashboard
- ┣ 📄 app.ipynb          # Notebook com a análise exploratória
- ┣ 📄 dashboard.py      # Script do Dashboard Streamlit
- ┣ 📄 Global_Nike.csv   # Dataset (após o download)
- ┗ 📄 README.md
- ```
+
