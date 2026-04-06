@@ -12,7 +12,7 @@ Análise Preditiva: Criar bases para futuras análises de faturamento cruzando o
 ## 🛠️ Tecnologias e Bibliotecas
 As seguintes ferramentas foram utilizadas no desenvolvimento:
 
-Python 3.13
+Python 3.10 ou superior
 
 Pandas: Para manipulação e tratamento dos dados.
 
@@ -70,11 +70,18 @@ A estrutura deve ficar assim:
  ┣ 📄 Global_Nike.csv   # Dataset (após o download)
  ┗ 📄 README.md
 ```
-##🚀 Como Executar o Dashboard
-Se você deseja visualizar o dashboard interativo, após configurar o dataset, execute:
+## 🚀 Como Executar o Dashboard
+Certifique-se de ter o Python instalado. Depois, siga os passos:
 
-```
+1. Instale as dependências necessárias:
+
+```bash
 pip install streamlit pandas seaborn matplotlib numpy
+streamlit run dashboard.py
+```
+2. Execute a aplicação:
+
+```Bash
 streamlit run dashboard.py
 ```
 
